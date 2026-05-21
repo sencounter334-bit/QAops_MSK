@@ -1,0 +1,29 @@
+{
+  "name": "framework1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Regression": "npx playwright test",
+    "Smoke": "npx playwright test --grep @smoke --config playwright.config1.js --project=chrome",
+    "basic": "npx playwright test --grep @basic",
+    "e2e": "npx playwright test --grep @e2e --config playwright.config1.js --project=chrome",
+    "cucumberRT": "npx cucumber-js --tags \"@regression\" --format html:cucumber-report.html --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.5",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.4.0",
+    "allure-playwright": "^3.8.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "exceljs": "^4.4.0"
+  }
+}

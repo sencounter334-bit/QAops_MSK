@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","12696","@basic Browser Context-Validating Error login","chromium","2026-05-17","passed","2026-05-17","","UIBasicstest.spec.js","",""
+"","7967","@basic Validating first product","chromium","2026-05-17","passed","2026-05-17","","task01.spec.js","",""
