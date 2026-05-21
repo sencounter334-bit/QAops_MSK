@@ -20,8 +20,10 @@ jobs:
     - name: Azure Login
     - uses: azure/login@v2
       with:
-        creds: ${( secrets.AZURECONNECT )}
+        creds: ${{ secrets.AZURECONNECT }}
     - name: Run Playwright tests
+      env:
+        PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
       run: npx playwright test --grep @smoke --config=playwright.service.config.js --workers=3 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
